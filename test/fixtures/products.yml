@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  foto: MyString
+  name: MyString
+  price: 9.99
+  vendor: MyString
+  describe: MyText
+  category_id: 1
+
+two:
+  foto: MyString
+  name: MyString
+  price: 9.99
+  vendor: MyString
+  describe: MyText
+  category_id: 1
