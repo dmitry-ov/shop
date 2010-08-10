@@ -2,7 +2,9 @@
 
 <h3> Фотография продукта  </h3>
 
-<%=  image_tag  @product.foto  %> 
+<%= unless  @product.foto.nil? 
+    image_tag  @product.foto  
+end %> 
 
 <h3> Название </h3>
 <%=h  @product.name %> 

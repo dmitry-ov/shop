@@ -1,11 +1,33 @@
+<h2> Список продуктов </h2>
+
 <% @products.each do |p| %>
+
+  <%= unless  p.foto.nil? 
+        image_tag p.foto
+      end %> 
      
-    <%= p.foto  %> 
-    <%= p.name  %> </br>
-    <%= p.price %> </br>
-    <%= p.vendor %> </br> 
-    <%= p.describe %> </br> 
-    <%= p.category_id %> </br> 
+        </br>   
+    
+        <h3> Название </h3>
+        <%= p.name.to_s  %> </br>
+
+        <h3> Цена  </h3>
+
+        <%= p.price %> </br>
+        
+        
+        
+        <h3>  Производитель  </h3>
+
+        <%= p.vendor %> </br> 
+        
+        <h3> Описание   </h3>
+
+        <%= p.describe %> </br> 
+        
+        <h3>  Категория  </h3>
+
+       <%= p.category_id %> </br> 
     
   
 <% end %>
