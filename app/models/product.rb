@@ -13,4 +13,7 @@ class Product < ActiveRecord::Base
                             :vendor, 
                             :describe
 
+  validates_numericality_of :price
+
+
 end

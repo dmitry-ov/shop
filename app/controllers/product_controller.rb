@@ -14,5 +14,13 @@ class ProductController < ApplicationController
      show
  end
 
+ def new
+    @product = Product.new
+ end
+
+ def create
+    @product = Product.new(params[:product])
+ end
+
 
 end
