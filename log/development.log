@@ -6764,3 +6764,113 @@ Processing ProductController#index (for 10.44.0.121 at 2010-08-10 17:47:04) [GET
   [4;35;1mProduct Load (1.1ms)[0m   [0mSELECT * FROM "products" [0m
 Rendering product/index
 Completed in 89ms (View: 76, DB: 1) | 200 OK [http://10.44.0.210/product/index]
+
+
+Processing ProductController#small_show (for 10.44.0.121 at 2010-08-11 13:27:59) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProduct Load (1.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering product/small_show
+Completed in 104ms (View: 24, DB: 1) | 200 OK [http://10.44.0.210/product/small_show/6]
+
+
+Processing ProductController#show (for 10.44.0.121 at 2010-08-11 13:28:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering product/show
+Completed in 36ms (View: 19, DB: 1) | 200 OK [http://10.44.0.210/product/show/6]
+
+
+Processing ProductController#small_show (for 10.44.0.121 at 2010-08-11 13:28:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering product/small_show
+Completed in 24ms (View: 7, DB: 1) | 200 OK [http://10.44.0.210/product/small_show/6]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:09:48) [GET]
+  Parameters: {"id"=>6}
+  [4;35;1mProduct Load (1.8ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 37ms (View: 21, DB: 2) | 200 OK [http://10.44.0.210/]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:11:26) [GET]
+  [4;36;1mProduct Load (1.2ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://10.44.0.210/]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:11:28) [GET]
+  [4;35;1mProduct Load (1.5ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 112ms (View: 77, DB: 2) | 200 OK [http://10.44.0.210/]
+  [4;36;1mProduct Exists (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."foto" = 'f.jpg') LIMIT 1[0m
+  [4;35;1mProduct Exists (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."name" = 'Фрукт') LIMIT 1[0m
+  [4;36;1mProduct Exists (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."price" = 135.0) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."vendor" = 'Метроолис') LIMIT 1[0m
+  [4;36;1mProduct Exists (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."describe" = 'Есть каждый день') LIMIT 1[0m
+  [4;35;1mProduct Create (0.9ms)[0m   [0mINSERT INTO "products" ("name", "price", "created_at", "describe", "updated_at", "foto", "category_id", "vendor") VALUES('Фрукт', 135.0, '2010-08-11 08:16:14', 'Есть каждый день', '2010-08-11 08:16:14', 'f.jpg', 1, 'Метроолис')[0m
+
+
+Processing ProductController#small_show (for 10.44.0.121 at 2010-08-11 14:16:21) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+Rendering product/small_show
+Completed in 25ms (View: 7, DB: 1) | 200 OK [http://10.44.0.210/product/small_show/7]
+
+
+Processing ProductController#show (for 10.44.0.121 at 2010-08-11 14:16:25) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mProduct Load (0.8ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+Rendering product/show
+Completed in 25ms (View: 8, DB: 1) | 200 OK [http://10.44.0.210/product/show/7]
+  [4;36;1mProduct Exists (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."foto" = 'fish.jpg') LIMIT 1[0m
+  [4;35;1mProduct Exists (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."name" = 'Рыба жареная') LIMIT 1[0m
+  [4;36;1mProduct Exists (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."price" = 200.0) LIMIT 1[0m
+  [4;35;1mProduct Exists (0.2ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."vendor" = 'Голубые озера') LIMIT 1[0m
+  [4;36;1mProduct Exists (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."describe" = 'Рыба из чистейшего озера') LIMIT 1[0m
+  [4;35;1mProduct Create (0.5ms)[0m   [0mINSERT INTO "products" ("name", "price", "created_at", "describe", "updated_at", "foto", "category_id", "vendor") VALUES('Рыба жареная', 200.0, '2010-08-11 08:18:15', 'Рыба из чистейшего озера', '2010-08-11 08:18:15', 'fish.jpg', 1, 'Голубые озера')[0m
+
+
+Processing ProductController#show (for 10.44.0.121 at 2010-08-11 14:18:21) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendering product/show
+Completed in 27ms (View: 8, DB: 1) | 200 OK [http://10.44.0.210/product/show/8]
+
+
+Processing ProductController#show (for 10.44.0.121 at 2010-08-11 14:19:24) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendering product/show
+Completed in 27ms (View: 8, DB: 1) | 200 OK [http://10.44.0.210/product/show/8]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:19:29) [GET]
+  [4;36;1mProduct Load (1.9ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 26ms (View: 11, DB: 2) | 200 OK [http://10.44.0.210/]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:20:13) [GET]
+  [4;35;1mProduct Load (1.7ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 26ms (View: 12, DB: 2) | 200 OK [http://10.44.0.210/]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:20:26) [GET]
+  [4;36;1mProduct Load (1.6ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 26ms (View: 11, DB: 2) | 200 OK [http://10.44.0.210/]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:20:39) [GET]
+  [4;35;1mProduct Load (1.8ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 26ms (View: 11, DB: 2) | 200 OK [http://10.44.0.210/]
+
+
+Processing ProductController#index (for 10.44.0.121 at 2010-08-11 14:22:26) [GET]
+  [4;36;1mProduct Load (1.7ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering product/index
+Completed in 27ms (View: 12, DB: 2) | 200 OK [http://10.44.0.210/]
