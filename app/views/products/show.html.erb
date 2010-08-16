@@ -1,0 +1,31 @@
+<h2> Полное представление </h2>
+
+<h3> Фотография продукта  </h3>
+
+<%= unless  @product.foto.nil? 
+    image_tag  @product.foto  
+end %> 
+
+<h3> Название </h3>
+<%=h  @product.name %> 
+
+<h3> Цена </h3>
+<%=h @product.price %> 
+
+<h3> Производитель </h3>
+<%=h @product.vendor %> </br>
+
+<h3> Описание </h3>
+<%=h  @product.describe %> </br>
+
+<h3> Индекс категории к которой относится</h3>
+<%=h  @product.category_id  %>
+
+</br></br>
+
+
+<%= link_to 'Перейти к краткому представлению', 
+    :controller => "products", 
+    :action => "small_show",
+    :id => @product
+%>

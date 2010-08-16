@@ -1,0 +1,22 @@
+<h1>   Создан продукт  </h1>
+
+<%= unless  @product.foto.nil? 
+    image_tag  @product.foto  
+end %> 
+
+<h3> Название </h3>
+<%=h  @product.name %> 
+
+<h3> Цена </h3>
+<%=h @product.price %> 
+
+<h3> Производитель </h3>
+<%=h @product.vendor %> </br>
+
+<h3> Описание </h3>
+<%=h  @product.describe %> </br>
+
+<h3> Индекс категории к которой относится</h3>
+<%=h  @product.category_id  %>
+
+</br></br>

@@ -1,0 +1,24 @@
+<% form_for(@product) do |f| %>
+
+<!--  <%= f.error_messages %> --> 
+
+  <%= f.label :foto %></br>
+  <%= f.text_field :foto %></br>
+
+  <%= f.label  :name  %></br>
+  <%= f.text_field :name %></br>  
+
+  <%= f.label :price %>  </br>  
+  <%= f.text_field :price %>   </br>  
+
+  <%= f.label :vendor %>   </br>  
+  <%= f.text_field :vendor %>    </br>  
+
+  <%= f.label :category_id %>   </br>  
+  <%= f.text_field :category_id %>    </br>  
+  
+  <p>
+    <%= f.submit 'create' %> 
+  </p> 
+
+<% end %>
