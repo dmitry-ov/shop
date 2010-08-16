@@ -7,13 +7,12 @@ class Product < ActiveRecord::Base
                           :vendor, 
                           :describe 
 
-   validates_uniqueness_of  :foto,
-                            :name, 
-                            :price, 
-                            :vendor, 
-                            :describe
+#   validates_uniqueness_of  :foto,
+#                            :name, 
+#                            :price, 
+#                            :vendor, 
+#                            :describe
 
-  validates_numericality_of :price
-
+#  validates_numericality_of :price
 
 end
